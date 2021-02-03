@@ -130,14 +130,10 @@
 >[https://github.com/arsenidze/microservice_application](https://github.com/arsenidze/microservice_application)
 > 2. Docker-Compose APP Details:
 
-```mermaid
-graph TD
-A[UI APP] -- Text Revert Option --> B[Text To Revert APP]
-A[UI APP] -- Text To Lower Case Option --> C[Text To Lower APP]
-A[UI APP] -- Text To Upper Case Option --> D[Text To Upper APP]
-A[UI APP] -- Visited Count --> E[Redis]
 
-```
+![enter image description here](https://raw.githubusercontent.com/GitPointer/ec2_docker/main/Docker-Compose-App-Details.png)
+
+
 > 3. After `Docker-Compose Demo`  run successfully.App can be open in browser using `Docker AMI public IP`
 > **http://Public_IP_of_Docker_Node:5000**
 
