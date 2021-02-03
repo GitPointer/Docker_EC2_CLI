@@ -139,6 +139,6 @@ A[UI APP] -- Visited Count --> E[Redis]
 
 ```
 > 3. After `Docker-Compose Demo`  run successfully.App can be open in browser using `Docker AMI public IP`
-> **http://<Public_IP_of_Docker_Node>:5000**
+> **http://Public_IP_of_Docker_Node:5000**
 
 ![enter image description here](https://raw.githubusercontent.com/GitPointer/ec2_docker/main/docker_compose_result.png)
