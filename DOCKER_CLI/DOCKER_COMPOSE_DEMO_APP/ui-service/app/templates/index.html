@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div>
+        <p>
+            {% if (hits is defined) %}
+            'Hello World from Flask App! I have been seen '{{hits}} 'times.'
+            {% endif %}
+        </p>
+        <p>Input</p>
+        <form method="POST" action="/process">
+            <input type="text" name="input_text">
+            <input type="submit" value="Process text">
+            <br>
+            <input type="checkbox" name="to_upper">
+            To upper<br>
+            <input type="checkbox" name="to_lower">
+            To lower<br>
+            <input type="checkbox" name="revert">
+            Revert<br>
+        </form>
+    </div>
+    <div>
+        {% if (output_text is defined) and (input_text|length > 0) %}
+        <p>Input:</p>
+        {{input_text}}<br>
+        <p>Output:</p>
+        {{output_text}}<br>
+        {% endif %}
+    </div>
+</body>
+</html>
