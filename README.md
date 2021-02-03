@@ -1,4 +1,3 @@
-# DOCKER_CLI_Manual
 ## Installation on Docker Node
  >**Note:**  All installation instructions are specific to **`[Amazon Linux 2 AMI (HVM), SSD Volume Type - ami-01720b5f421cf0179 (64-bit x86) / ami-04c2a5c7e6c051fb2 (64-bit Arm)]`**
   1. **Prerequisite**
@@ -15,7 +14,7 @@
 [https://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-basics.html](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-basics.html)
  3.  **Install Docker-Compose**
  
-			>`sudo curl -L "https://github.com/docker/compose/releases/download/1.26.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose`
+		>`sudo curl -L "https://github.com/docker/compose/releases/download/1.26.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose`
  
  4. **Install python 3**
  
@@ -39,6 +38,7 @@
 		3.  **Enable Docker Service**
     
 			    >`sudo systemctl enable docker.service`
+			    
 		>**Note:**  
     
 		>1. Log out and log back in again to pick up the new `docker` group permissions. You can accomplish this by closing your current SSH terminal window and reconnecting to your instance in a new one. Your new SSH session will have the appropriate `docker` group permissions.
@@ -69,6 +69,7 @@
 	 2. Run below command 
    
 			  >`python3 DockerCli.py`
+
 ## Menu Description
 
 #### Main Menu
